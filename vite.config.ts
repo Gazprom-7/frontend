@@ -8,7 +8,7 @@ export default defineConfig({
   server: { open: true },
   resolve: {
     alias: {
-      src: "/src",
+      src: '/src',
     },
   },
 })

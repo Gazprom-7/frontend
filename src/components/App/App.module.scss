@@ -1,5 +1,7 @@
+@import 'src/styles/variables.scss';
+
 .app {
   width: 100%;
-  height: 100vh;
-  background-color: blue;
+  font-family: 'Roboto', sans-serif;
+  color: $colorTextPrimary;
 }
