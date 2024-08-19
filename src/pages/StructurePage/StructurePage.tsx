@@ -46,7 +46,7 @@ const items: TabsProps['items'] = [
 const { Title } = Typography
 
 const StructurePage: FC = () => {
-  const onChange = (key: string) => {}
+  // const onChange = () => {}
 
   return (
     <ConfigProvider
@@ -69,7 +69,7 @@ const StructurePage: FC = () => {
           defaultActiveKey='/departments'
           size='large'
           items={items}
-          onChange={onChange}
+          // onChange={onChange}
         />
       </Layout>
     </ConfigProvider>

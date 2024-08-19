@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { ConfigProvider, Layout } from 'antd'
+import { ConfigProvider } from 'antd'
 import AppHeader from 'src/components/AppHeader/AppHeader'
 import AppContent from 'src/components/AppContent/AppContent'
 import styles from './App.module.scss'
@@ -14,10 +14,8 @@ const App: FC = () => {
           },
         }}
       >
-        {/* <Layout> */}
         <AppHeader />
         <AppContent />
-        {/* </Layout> */}
       </ConfigProvider>
     </div>
   )

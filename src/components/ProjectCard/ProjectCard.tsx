@@ -62,7 +62,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: FC<ProjectCardProps> = ({ details }) => {
-  const { id, name, lead, teams } = details
+  const { id, name, lead } = details
   return (
     <ConfigProvider
       theme={{
