@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import { Outlet } from 'react-router-dom'
-import { ConfigProvider } from 'antd'
-import Header from 'src/components/Header/Header'
+import { ConfigProvider, Layout } from 'antd'
+import AppHeader from 'src/components/AppHeader/AppHeader'
+import AppContent from 'src/components/AppContent/AppContent'
 import styles from './App.module.scss'
 
 const App: FC = () => {
@@ -11,12 +11,13 @@ const App: FC = () => {
         theme={{
           token: {
             fontFamily: 'Roboto',
-            colorPrimary: 'rgba(black, 0.85)',
           },
         }}
       >
-        <Header />
-        <Outlet />
+        {/* <Layout> */}
+        <AppHeader />
+        <AppContent />
+        {/* </Layout> */}
       </ConfigProvider>
     </div>
   )
