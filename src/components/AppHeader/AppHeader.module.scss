@@ -1,0 +1,56 @@
+@import 'src/styles/variables.scss';
+@import 'src/styles/mixins.scss';
+
+.header {
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  border-bottom: 1px solid $colorBorder;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $colorTextPrimary;
+  background-color: $colorHeaderBg;
+  box-shadow: 0px -1px 0px 0px $colorBorder;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo, .profile {
+  @include resetLink;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  gap: 12px;
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  background: url('src/assets/images/logo/logo.svg') center / contain no-repeat;
+}
+
+.logoText {
+  @include resetText;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.profile {
+  gap: 8px;
+  padding: 0 12px;
+}
+
+.profileImage {
+  width: 24px;
+  height: 24px;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
