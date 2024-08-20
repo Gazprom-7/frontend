@@ -12,7 +12,6 @@ import {
 } from '@ant-design/icons'
 
 const siderStyle: CSSProperties = {
-  // overflow: 'auto',
   position: 'fixed',
   insetInlineStart: 0,
   top: 48,

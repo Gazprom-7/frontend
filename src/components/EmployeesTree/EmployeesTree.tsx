@@ -1,5 +1,6 @@
 import { CSSProperties, FC, useState, useEffect } from 'react'
 import { Row, Col, Button, Flex } from 'antd'
+import { v4 as uuidv4 } from 'uuid'
 import { useAppDispatch, useAppSelector } from 'src/services/hooks'
 import {
   fetchEmployeeCardsData,
@@ -34,6 +35,7 @@ const EmployeesTree: FC = () => {
       { department: 'Инфраструктура', hidden: true },
     ],
   })
+
   const dispatch = useAppDispatch()
   const { employee } = useAppSelector(selectEmployee)
 
@@ -62,7 +64,7 @@ const EmployeesTree: FC = () => {
       </Row>
       <Row gutter={gap} justify='center'>
         {employee.subordinates.map(lead => (
-          <Col>
+          <Col key={`${lead.id}-${uuidv4()}`}>
             <Flex vertical gap={gap}>
               <EmployeeCard data={lead} isLead />
               <Button
@@ -90,7 +92,10 @@ const EmployeesTree: FC = () => {
                 }}
               >
                 {lead.subordinates.map(subordinate => (
-                  <EmployeeCard data={subordinate} />
+                  <EmployeeCard
+                    data={subordinate}
+                    key={`${subordinate.id}-${uuidv4()}`}
+                  />
                 ))}
               </Flex>
             </Flex>

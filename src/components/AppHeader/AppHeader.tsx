@@ -1,10 +1,9 @@
 import { FC } from 'react'
 import { Link } from 'react-router-dom'
-import { Layout, Typography } from 'antd'
-import Avatar from 'src/assets/images/mock/avatar1.jpg'
+import { Typography } from 'antd'
+import Avatar from 'src/assets/images/mock/avatar1.png'
 import styles from './AppHeader.module.scss'
 
-const { Header } = Layout
 const { Text } = Typography
 
 const AppHeader: FC = () => {

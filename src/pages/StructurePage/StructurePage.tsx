@@ -19,6 +19,7 @@ const tabPaneStyle: CSSProperties = {
   height: 'calc(100vh - 161.14px)',
   backgroundColor: '#F0F2F5',
   padding: '24px 12px',
+  paddingTop: 60,
   overflowY: 'scroll',
 }
 
@@ -46,8 +47,6 @@ const items: TabsProps['items'] = [
 const { Title } = Typography
 
 const StructurePage: FC = () => {
-  const onChange = (key: string) => {}
-
   return (
     <ConfigProvider
       theme={{
@@ -65,12 +64,7 @@ const StructurePage: FC = () => {
         <Title level={4} style={titleStyle}>
           Структура
         </Title>
-        <Tabs
-          defaultActiveKey='/departments'
-          size='large'
-          items={items}
-          onChange={onChange}
-        />
+        <Tabs defaultActiveKey='/departments' size='large' items={items} />
       </Layout>
     </ConfigProvider>
   )

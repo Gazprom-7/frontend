@@ -5,7 +5,7 @@ export const initialEmployeeTree: EmployeeCardType = {
   name: '',
   lastname: '',
   image: '',
-  post: '',
-  address: '',
+  position: '',
+  city: '',
   subordinates: []
 }

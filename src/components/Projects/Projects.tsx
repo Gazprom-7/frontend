@@ -30,7 +30,6 @@ const Projects: FC = () => {
         {projects.map(project => (
           <Col
             flex='292px'
-            // span={6}
             xs={24}
             sm={24}
             md={24}
