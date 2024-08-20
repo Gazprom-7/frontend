@@ -5,7 +5,6 @@ import {
   PhoneOutlined,
   SendOutlined,
 } from '@ant-design/icons'
-import { v4 as uuidv4 } from 'uuid'
 import type { ProjectCardType } from 'src/utils/types'
 
 const cardStyle: CSSProperties = {
@@ -50,6 +49,7 @@ const ellipsisStyle: CSSProperties = {
 const buttonStyle: CSSProperties = {
   width: 35,
   height: 35,
+  borderRadius: 8,
   color: '#434343',
   backgroundColor: '#F0F0F0',
   boxShadow: 'none',
@@ -62,7 +62,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: FC<ProjectCardProps> = ({ details }) => {
-  const { id, name, lead } = details
+  const { name, lead } = details
   return (
     <ConfigProvider
       theme={{
@@ -75,7 +75,6 @@ const ProjectCard: FC<ProjectCardProps> = ({ details }) => {
       }}
     >
       <Card
-        key={`${id}-${uuidv4()}`}
         hoverable
         title={name}
         size='small'

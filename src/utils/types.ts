@@ -39,7 +39,8 @@ export interface EmployeeType {
   image: string | null
   position: string
   staff: boolean
-  status: {
+  available: boolean
+  status?: {
     description: string
     date: string
     replacement: {
@@ -62,11 +63,11 @@ export interface EmployeeType {
     name: string
     lastname: string
   }
-  teams: {
+  teams?: {
     id: number
     name: string
   }[]
-  projects: {
+  projects?: {
     id: number
     name: string
     description: string
@@ -83,7 +84,7 @@ export interface EmployeeType {
       organization: string
       year: number
     }
-    additional: {
+    additional?: {
       degree: string
       organization: string
       year: number
@@ -109,38 +110,36 @@ export interface EmployeeType {
 export interface ProjectType {
   id: number
   name: string
-  foto: string
   description: string
-  leader: {
+  image: string
+  progress: number
+  lead: {
     id: number
     name: string
     lastname: string
-    foto: string
+    image: string
   }
-  departments: {
-    id: number
-    name: string
-  }[]
   teams: {
     id: number
     name: string
   }[]
+  departments: string[]
 }
 
 export interface TeamType {
   id: number
   name: string
-  department: string
-  leader: {
+  lead: {
     id: number
     name: string
     lastname: string
-    foto: string
-  }[]
+    image: string
+  }
   members: {
     id: number
     name: string
     lastname: string
-    foto: string
+    image: string
   }[]
+  departments: string[]
 }

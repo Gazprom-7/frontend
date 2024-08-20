@@ -29,16 +29,16 @@ export const mockEmployeeCardsData: EmployeeCardType = {
   city: 'Москва',
   subordinates: [
     {
-      id: 1,
+      id: 2,
       name: 'Алексей',
       lastname: 'Балашов',
       image: Avatar2,
-      position: 'Руководитель отдела',
+      position: 'CTO',
       city: 'Москва',
       department: 'Разработка',
       subordinates: [
         {
-          id: 1,
+          id: 7,
           name: 'Мария',
           lastname: 'Васильева',
           image: Avatar7,
@@ -48,7 +48,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 2,
+          id: 8,
           name: 'Полина',
           lastname: 'Бортникова',
           image: Avatar13,
@@ -58,7 +58,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 3,
+          id: 9,
           name: 'Дмитрий',
           lastname: 'Сомов',
           image: Avatar5,
@@ -68,7 +68,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 4,
+          id: 10,
           name: 'Екатерина',
           lastname: 'Смирнова',
           image: Avatar8,
@@ -78,7 +78,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 5,
+          id: 11,
           name: 'Василий',
           lastname: 'Тихонов',
           image: Avatar14,
@@ -88,7 +88,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 6,
+          id: 12,
           name: 'Артем',
           lastname: 'Николаев',
           image: Avatar6,
@@ -98,7 +98,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 7,
+          id: 13,
           name: 'Дарья',
           lastname: 'Сергеева',
           image: Avatar1,
@@ -108,7 +108,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 8,
+          id: 14,
           name: 'Иван',
           lastname: 'Ефимов',
           image: Avatar5,
@@ -118,7 +118,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 9,
+          id: 15,
           name: 'Федор',
           lastname: 'Афанасьев',
           image: Avatar11,
@@ -128,7 +128,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 10,
+          id: 16,
           name: 'Алексей',
           lastname: 'Громов',
           image: Avatar2,
@@ -138,7 +138,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 11,
+          id: 17,
           name: 'Лев',
           lastname: 'Григорьев',
           image: Avatar14,
@@ -150,16 +150,16 @@ export const mockEmployeeCardsData: EmployeeCardType = {
       ],
     },
     {
-      id: 2,
+      id: 3,
       name: 'Диана',
       lastname: 'Куликова',
       image: Avatar3,
-      position: 'Руководитель отдела',
+      position: 'CTO',
       city: 'Москва',
       department: 'Архитектура',
       subordinates: [
         {
-          id: 1,
+          id: 18,
           name: 'Павел',
           lastname: 'Абрамцев',
           image: Avatar11,
@@ -169,7 +169,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 2,
+          id: 19,
           name: 'Нина',
           lastname: 'Костина',
           image: Avatar15,
@@ -179,7 +179,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 3,
+          id: 20,
           name: 'Ирина',
           lastname: 'Коваленко',
           image: Avatar16,
@@ -189,7 +189,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 4,
+          id: 21,
           name: 'Евгения',
           lastname: 'Ромашкина',
           image: Avatar1,
@@ -199,7 +199,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 5,
+          id: 22,
           name: 'Архип',
           lastname: 'Бодарев',
           image: Avatar9,
@@ -209,7 +209,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 6,
+          id: 23,
           name: 'Алёна',
           lastname: 'Логинова',
           image: Avatar10,
@@ -219,7 +219,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 7,
+          id: 24,
           name: 'Лейла',
           lastname: 'Титова',
           image: Avatar4,
@@ -229,7 +229,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 8,
+          id: 25,
           name: 'Всеволод',
           lastname: 'Ларин',
           image: Avatar2,
@@ -241,16 +241,16 @@ export const mockEmployeeCardsData: EmployeeCardType = {
       ],
     },
     {
-      id: 3,
+      id: 4,
       name: 'Ирина',
       lastname: 'Кунская',
       image: Avatar4,
-      position: 'Руководитель отдела',
+      position: 'CTO',
       city: 'Москва',
       department: 'ИБ',
       subordinates: [
         {
-          id: 1,
+          id: 26,
           name: 'Максим',
           lastname: 'Цветков',
           image: Avatar14,
@@ -260,7 +260,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 2,
+          id: 27,
           name: 'Артемий',
           lastname: 'Мельников',
           image: Avatar6,
@@ -270,7 +270,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 3,
+          id: 28,
           name: 'Алла',
           lastname: 'Седова',
           image: Avatar16,
@@ -280,7 +280,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 4,
+          id: 29,
           name: 'Лилия',
           lastname: 'Соловьева',
           image: Avatar15,
@@ -290,7 +290,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 5,
+          id: 30,
           name: 'Виктор',
           lastname: 'Злобин',
           image: Avatar11,
@@ -300,7 +300,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 6,
+          id: 31,
           name: 'Ольга',
           lastname: 'Кузнецова',
           image: Avatar1,
@@ -310,7 +310,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 7,
+          id: 32,
           name: 'Денис',
           lastname: 'Пономарев',
           image: Avatar5,
@@ -320,7 +320,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 8,
+          id: 33,
           name: 'Анастасия',
           lastname: 'Фролова',
           image: Avatar17,
@@ -330,7 +330,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 9,
+          id: 34,
           name: 'Роман',
           lastname: 'Жуков',
           image: Avatar2,
@@ -340,7 +340,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 10,
+          id: 35,
           name: 'Игорь',
           lastname: 'Беляев',
           image: Avatar9,
@@ -350,7 +350,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 11,
+          id: 36,
           name: 'Регина',
           lastname: 'Громова',
           image: Avatar12,
@@ -360,7 +360,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 12,
+          id: 37,
           name: 'Екатерина',
           lastname: 'Ляхова',
           image: Avatar7,
@@ -370,7 +370,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 13,
+          id: 38,
           name: 'Анна',
           lastname: 'Любавина',
           image: Avatar18,
@@ -382,16 +382,16 @@ export const mockEmployeeCardsData: EmployeeCardType = {
       ],
     },
     {
-      id: 4,
+      id: 5,
       name: 'Иван',
       lastname: 'Абрамов',
       image: Avatar5,
-      position: 'Руководитель отдела',
+      position: 'CTO',
       city: 'Москва',
       department: 'Аналитика',
       subordinates: [
         {
-          id: 1,
+          id: 39,
           name: 'Светлана',
           lastname: 'Лебедева',
           image: Avatar13,
@@ -401,7 +401,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 2,
+          id: 40,
           name: 'Константин',
           lastname: 'Григорьев',
           image: Avatar5,
@@ -411,7 +411,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 3,
+          id: 41,
           name: 'Наталья',
           lastname: 'Кравцова',
           image: Avatar4,
@@ -421,7 +421,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 4,
+          id: 42,
           name: 'Вячеслав',
           lastname: 'Низовцев',
           image: Avatar2,
@@ -431,7 +431,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 5,
+          id: 43,
           name: 'Зинаида',
           lastname: 'Лемешева',
           image: Avatar7,
@@ -441,7 +441,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 6,
+          id: 44,
           name: 'Татьяна',
           lastname: 'Орлова',
           image: Avatar1,
@@ -451,7 +451,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 7,
+          id: 45,
           name: 'Семен',
           lastname: 'Ковалев',
           image: Avatar6,
@@ -461,7 +461,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 8,
+          id: 46,
           name: 'Сергей',
           lastname: 'Федоров',
           image: Avatar14,
@@ -471,7 +471,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 9,
+          id: 47,
           name: 'Мария',
           lastname: 'Кравцова',
           image: Avatar8,
@@ -481,7 +481,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 10,
+          id: 48,
           name: 'Дарья',
           lastname: 'Шумкова',
           image: Avatar10,
@@ -493,16 +493,16 @@ export const mockEmployeeCardsData: EmployeeCardType = {
       ],
     },
     {
-      id: 5,
+      id: 6,
       name: 'Антон',
       lastname: 'Хвалынский',
       image: Avatar6,
-      position: 'Руководитель отдела',
+      position: 'CTO',
       city: 'Москва',
       department: 'Инфраструктура',
       subordinates: [
         {
-          id: 1,
+          id: 49,
           name: 'Артур',
           lastname: 'Лесков',
           image: Avatar5,
@@ -512,7 +512,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 2,
+          id: 50,
           name: 'Александра',
           lastname: 'Глазкова',
           image: Avatar8,
@@ -522,7 +522,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 3,
+          id: 51,
           name: 'Полина',
           lastname: 'Васильева',
           image: Avatar12,
@@ -532,7 +532,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 4,
+          id: 52,
           name: 'Илья',
           lastname: 'Мосин',
           image: Avatar14,
@@ -542,7 +542,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 5,
+          id: 53,
           name: 'Алексей',
           lastname: 'Сидоров',
           image: Avatar9,
@@ -552,7 +552,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 6,
+          id: 54,
           name: 'Кристина',
           lastname: 'Зайцева',
           image: Avatar4,
@@ -562,7 +562,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 7,
+          id: 55,
           name: 'Максим',
           lastname: 'Савельев',
           image: Avatar11,
@@ -572,7 +572,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 8,
+          id: 56,
           name: 'Софья',
           lastname: 'Лескова',
           image: Avatar15,
@@ -582,7 +582,7 @@ export const mockEmployeeCardsData: EmployeeCardType = {
           subordinates: [],
         },
         {
-          id: 9,
+          id: 57,
           name: 'Антон',
           lastname: 'Баранов',
           image: Avatar6,

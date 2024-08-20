@@ -1,8 +1,9 @@
 import { CSSProperties, FC } from 'react'
 import { Card, Avatar, Typography, Tag, Flex, Button } from 'antd'
 import { UserOutlined, PhoneOutlined, SendOutlined } from '@ant-design/icons'
-import { v4 as uuidv4 } from 'uuid'
 import type { EmployeeCardType } from 'src/utils/types'
+import { useAppDispatch } from 'src/services/hooks'
+import { openInfo } from 'src/services/slices/employeeSlice'
 
 const leadCardStyle: CSSProperties = {
   width: 224,
@@ -100,6 +101,7 @@ const secondaryTextStyle: CSSProperties = {
 const buttonStyle: CSSProperties = {
   width: 32,
   height: 32,
+  borderRadius: 8,
   color: '#434343',
   backgroundColor: '#F0F0F0',
   boxShadow: 'none',
@@ -113,17 +115,23 @@ interface EmployeeCardProps {
 }
 
 const EmployeeCard: FC<EmployeeCardProps> = ({ data, isLead = false }) => {
-  const { id, name, lastname, image, position, city, subordinates } = data
+  const { name, lastname, image, position, city, subordinates } = data
+
+  const dispatch = useAppDispatch()
+
+  const handleClick = () => {
+    dispatch(openInfo())
+  }
 
   return isLead ? (
     <Card
-      key={`${id}-${uuidv4()}`}
       hoverable
       size='small'
       style={leadCardStyle}
       styles={{
         body: leadBodyStyle,
       }}
+      onClick={handleClick}
     >
       <Flex vertical gap={4} align='center'>
         <Avatar
@@ -148,7 +156,6 @@ const EmployeeCard: FC<EmployeeCardProps> = ({ data, isLead = false }) => {
     </Card>
   ) : (
     <Card
-      key={`${id}-${uuidv4()}`}
       hoverable
       title={
         <Flex align='flex-start' gap={12.5}>
@@ -167,6 +174,7 @@ const EmployeeCard: FC<EmployeeCardProps> = ({ data, isLead = false }) => {
         header: headerStyle,
         body: bodyStyle,
       }}
+      onClick={handleClick}
     >
       <Flex align='center' justify='space-between'>
         <Text type='secondary' style={secondaryTextStyle} ellipsis>
