@@ -1,5 +1,8 @@
-@import 'src/styles/variables.scss';
 @import 'src/styles/mixins.scss';
+
+$colorTextPrimary: rgba(#000000, .85);
+$colorHeaderBg: #FAFAFA;
+$colorBorder: #F0F0F0;
 
 .header {
   width: 100%;
