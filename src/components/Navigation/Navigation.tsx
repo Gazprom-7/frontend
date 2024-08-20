@@ -10,6 +10,7 @@ import {
   LeftOutlined,
   RightOutlined,
 } from '@ant-design/icons'
+import Trapezoid from 'src/assets/images/decor/trapezoid.svg'
 
 const siderStyle: CSSProperties = {
   position: 'fixed',
@@ -51,7 +52,7 @@ const triggerStyle: CSSProperties = {
   borderRadius: 0,
   boxShadow: 'none',
   backgroundColor: 'transparent',
-  backgroundImage: 'url(src/assets/images/decor/trapezoid.svg)',
+  backgroundImage: `url(${Trapezoid})`,
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
